@@ -1,0 +1,7 @@
+<div class="upload-wrap" (drop)="onDrop($event)" (dragover)="onDragOver($event)">
+  <label class="btn">
+    {{ label }}
+    <input type="file" [multiple]="multiple" [accept]="accept" (change)="onFilesChange($event)" hidden>
+  </label>
+  <p class="hint">Drag & drop files here or click to browse</p>
+</div>

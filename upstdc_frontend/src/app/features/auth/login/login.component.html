@@ -1,0 +1,14 @@
+<div class="login-card">
+  <h2>UPSTDC Portal Login</h2>
+  <form (ngSubmit)="submit()" [formGroup]="form">
+    <label>Username</label>
+    <input formControlName="username" placeholder="Username" />
+
+    <label>Password</label>
+    <input type="password" formControlName="password" placeholder="Password" />
+
+    <button class="btn" [disabled]="loading">{{ loading ? 'Signing in...' : 'Login' }}</button>
+
+    <p class="error" *ngIf="error">{{ error }}</p>
+  </form>
+</div>

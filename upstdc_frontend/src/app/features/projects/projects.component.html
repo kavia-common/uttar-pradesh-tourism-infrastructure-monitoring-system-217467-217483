@@ -1,0 +1,27 @@
+<h2>Projects</h2>
+
+<div class="grid">
+  <div>
+    <div class="panel">
+      <h3>Projects List</h3>
+      <app-data-table [columns]="columns" [data]="data"></app-data-table>
+    </div>
+  </div>
+  <div>
+    <div class="panel">
+      <h3>Create Project</h3>
+      <form (ngSubmit)="submit()" [formGroup]="form">
+        <label>Name</label>
+        <input formControlName="name" placeholder="Project name" />
+        <label>Budget</label>
+        <input formControlName="budget" placeholder="e.g., ₹2 Cr" />
+        <label>Description</label>
+        <textarea formControlName="description" rows="3"></textarea>
+
+        <app-file-upload (filesSelected)="onFiles($event)" label="Attach documents"></app-file-upload>
+
+        <button class="btn" type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+</div>

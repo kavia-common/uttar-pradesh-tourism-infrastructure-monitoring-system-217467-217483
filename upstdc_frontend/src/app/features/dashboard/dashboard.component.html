@@ -1,0 +1,13 @@
+<h2>Dashboard</h2>
+
+<div class="stats">
+  <div class="card" *ngFor="let s of stats">
+    <div class="value">{{ s.value }}</div>
+    <div class="label">{{ s.label }}</div>
+  </div>
+</div>
+
+<div class="panel">
+  <h3>Recent Projects</h3>
+  <app-data-table [columns]="columns" [data]="data"></app-data-table>
+</div>

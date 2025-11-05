@@ -1,0 +1,20 @@
+.upload-wrap {
+  border: 2px dashed #cbd5e1;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  color: #64748b;
+}
+.btn {
+  background: #3b82f6;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.hint {
+  font-size: 12px;
+  color: #64748b;
+}

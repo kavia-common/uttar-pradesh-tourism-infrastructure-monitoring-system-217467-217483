@@ -1,12 +1,21 @@
-/* Global styles for minimalistic design */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Global styles and theme tokens */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --primary: #3b82f6;
+  --secondary: #64748b;
+  --success: #06b6d4;
+  --error: #EF4444;
+  --bg: #ffffff;
+  --text: #0f172a;
 }
 
 html, body {
   height: 100%;
-  background-color: #ffffff;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
+
+button { border: none; }
+a { color: inherit; }

@@ -1,0 +1,19 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">UPSTDC</div>
+    <nav>
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/reports" routerLinkActive="active">Reports</a>
+      <a routerLink="/map" routerLinkActive="active">Geo Progress</a>
+    </nav>
+  </aside>
+  <main class="content">
+    <header class="topbar">
+      <div class="title">Infrastructure Monitoring</div>
+    </header>
+    <section class="page">
+      <router-outlet></router-outlet>
+    </section>
+  </main>
+</div>
